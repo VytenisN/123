@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<body onload="inf()">-->
+<body>
+<script>
+    var a,b,c;
+    a=3;
+    b=5;
+    c=Math.ceil(((a+b)*2)/3);
+    d=b*2; d+=a=1; d*=2+1;
+    d=d/3;
+    d=Math.floor(d);
+    var cnt=0;
+    function inf() {
+        //alert(c); //pvz
+        var e = document.getElementById('div');
+        e.innerHTML = e.innerHTML + ' ' + c;
+        console.log(++cnt + ':c=' + c + " " + 'd=' + d);
+
+        var s = "Labas"; //Eilutes tipas
+        var n = 5; //Skaiciaus tipas
+        var m = ['BMW', 'Ford', 'Audi']; //masyvo tipas
+        m[2] = 'Tesla';
+        m[3] = 'Volvo';
+        console.log(m[1] + ' ' + m[2] + ' ' + m[3]);
+        m[m.length] = 'aaa';
+        console.log(JSON.stringify(m));
+
+        /* objektas */
+        var o = {
+            'paskirtis': 'Automobilis',
+            'savybes':{
+                'pavaros':'automatine',
+                 'durys': 4,
+                 'info': function () {
+                    return 'Nera informacijos'
+            }
+            }
+        }
+        console.log('paskirtis:' + o.paskirtis);
+        console.log('Durys:' + o.savybes.durys);
+        e.innerHTML+= ' '+ 'Durys:' + o.savybes.durys;
+        console.log('Info:' + o.savybes.info());
+        console.log(JSON.stringify(o));
+    }
+</script>
+<div id="div" style="border:5px red solid; min-width: 100px; min-height: 80px"></div>
+<input type="button" value="test" onclick="inf()">
+
+</body>
+</html>

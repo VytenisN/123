@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stilius.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #paragrafas{
+            color:blue;
+            font-size: 20px;
+        }
+        body{
+            font-family: 'Spectral SC', serif;
+        }
+    </style>
+</head>
+<body>
+<!-- anchor link -->
+<a href="https://www.google.lt/" target="_blank" title="linkas">Eik cia</a>
+<!-- tag ID-->
+<p id="paragrafas">Nuspalvinta su tag</p>
+<!-- linija-->
+<hr>
+<!-- unordered list-->
+<ul>
+    <li>pirmas</li>
+    <li>antras</li>
+    <li>trecias
+    <ul>
+        <li>vienas vienas</li>
+        <li>du du</li>
+        <li>trecias numeris</li>
+    </ul>
+    </li>
+</ul>
+<!-- ordered list-->
+<ol>
+    <li>pirmas</li>
+    <li>antras</li>
+    <li>trecias</li>
+</ol>
+
+<div style="border: 1px red solid; position: relative; background-color:yellow">
+    <p>Paragrafas 1</p>
+    <p>paragrafas 2</p>
+    <div style="border: 1px green solid; background-color: aqua">tekstas</div>
+    <span style="color:green">tekstas</span>
+
+<!--postiion absolute-->
+<div style="position:absolute; top:2px; right:2px; background-color:white; border: 2px black solid"> abc</div>
+    <!--blokas su z-index-->
+    <div style="position:absolute; height: 150px; width: 150px; top:50px; left: 20px; background-color:brown; z-index:1;border-radius:50%"></div>
+    <!--pozicionavimas-->
+    <div style="position: relative; margin: 5px auto; width:200px; height:100px; line-height:10px; border: 1px blue solid; background-color:white; text-align:center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur, dicta facere fugit nihil odio perferendis quam suscipit velit? Aliquam cum delectus ducimus molestias nam necessitatibus officia soluta tempora voluptate!  </div>
+    <!--su display table cell-->
+    <div style="display:table-cell; position: relative; width:200px; height:100px; border: 1px blue solid; background-color:white; text-align:center; vertical-align: middle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem consequuntur corporis enim error exercitationem explicabo, in ipsa mollitia necessitatibus nisi officiis possimus quam qui quos repudiandae sed tenetur veniam! </div>
+</div>
+
+<i class="fa fa-car"></i>
+<i class="fa fa-car" style="font-size:48px;"></i>
+<i class="fa fa-car" style="font-size:60px;color:red;"></i>
+<ul>
+    <li><i class="fa fa-address-book" aria-hidden="true"></i>
+        pirmas ele</li>
+    <li><i class="fa fa-imdb" style="font-size:36px" aria-hidden="true"></i>
+        antras elem</li>
+    <li>trecias elementas <a href="https://en.wikipedia.org/wiki/Christmas" target="_blank"><i class="fa fa-snowflake-o" style="font-size:60px; color:green" aria-hidden="true"></i></a>
+    </li>
+</ul>
+<div style="width:300px; height:200px; border: 1px red solid; background-image: url('http://ahmed-nabil.com/wp-content/uploads/2011/07/or-logo3.jpg'); background-repeat:no-repeat;background-position: center center; background-size:contain ">
+</div>
+
+<iframe width="320" height="180" src="https://www.youtube.com/embed/7_LPdttKXPc?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen style="display:block;position:relative;margin:5px auto;width: 320px"></iframe>
+<br>
+<!--pirma forma-->
+<form action="/html/lenteles.html">
+<table>
+    <tr>
+        <td colspan="2">
+            <table>
+                <tr>
+                    <td><label>Vardas</label></td>
+                    <td><input type="text" name="vardas"></td>
+                    <td><label>Pozicjia</label></td>
+                    <td>
+                        <select name="pozicija">
+                            <option value="0">Darbininkas</option>
+                            <option value="1" selected>Vadybininkas</option>
+                            <option value="2">Direktorius</option>
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Pavardė</label></td>
+        <td><input type="text" name="pavarde"></td>
+    </tr>
+    <tr>
+        <td><label>Slaptažodis</label></td>
+        <td><input type="password" name="slaptazodis"></td>
+    </tr>
+    <tr>
+        <td><label>Atostogose</label></td>
+        <td><input type="checkbox" name="atostogos"></td>
+    </tr>
+    <tr>
+        <td><label>Pastaba</label></td>
+        <td><textarea name="pastaba" rows="5"> </textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="submit" value="Ivykdyti"</td>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>

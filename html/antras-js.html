@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function daugyba(a,b, kv){
+            var result = a * b;
+            if(typeof(kv) != 'undefined') result=result * 2;
+            return result;
+        }
+        function skaiciuoti(){
+            var a= parseInt(document.getElementById('a').value);
+            var b= parseInt(document.getElementById('b').value);
+            alert (daugyba (a,b,true));
+
+        }
+    </script>
+</head>
+<body>
+<script>
+    console.log(daugyba(2,3));
+</script>
+<form>
+    <label>a</label><input type="text" id="a"><br>
+    <label>b</label><input type="text" id="b"><br>
+    <input type="button" value="Skaiciuoti" onclick="skaiciuoti()">
+
+</form>
+</body>
+</html>
