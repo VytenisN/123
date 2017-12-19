@@ -13,14 +13,14 @@ $asmenys= [
         'pavarde'=>'Jonaitis',
         'maistas' => 'nevalgo',
         'lytis'=> 'vyras',
-        'rase'=> 'neatsako',
+        'rase'=> 'neatsake',
     ],
     [
         'vardas'=>'Petras',
         'pavarde'=>'Ponaitis',
         'maistas' => 'valgo',
         'lytis'=> 'vyras',
-        'rase'=> 'neatsako',
+        'rase'=> 'neatsake',
     ],
     [
         'vardas'=>'Zose',
@@ -34,16 +34,30 @@ $asmenys= [
 
 function getInfo($zmones){
 
-    //$s='<tr>'.'<td>'.$zmones['vardas'].'</td>'.'<td>'.$zmones['pavarde'].'</td>'.'<td>'.$zmones['maistas'].'</td>'.'<td>'.$zmones['lytis'].'</td>'.'<td>'.$zmones['rase'].'</td>';
-    return $zmones['vardas'];
+    $s='<td>'.$zmones['vardas'].'</td>'.'<td>'.$zmones['pavarde'].'</td>'.'<td>'.$zmones['maistas'].'</td>'.'<td>'.$zmones['lytis'].'</td>'.'<td>'.$zmones['rase'].'</td>';
+    return $s;
 }
-$n=1;
-foreach($asmenys as $zmones) {
-    echo '<tr>';
-    echo $n++;
-    echo getInfo($asmenys);
-}
+
 
 ?>
 
+<table>
+    <tr>
+        <th>Nr</th>
+        <th>Vardas</th>
+        <th>Pavarde</th>
+        <th>maistas</th>
+        <th>Lytis</th>
+        <th>Rase</th>
+    </tr>
+    <?php
+    $nr = 1;
+    foreach($asmenys as $zmones){
+        echo '<tr>'.'<td>' . $nr++ . '</td>'.getInfo($zmones);
+    }
+    ?>
+</table>
+
+
 </body>
+</html>
