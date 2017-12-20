@@ -76,6 +76,16 @@ function maisymas($t)
 }
 echo maisymas($tekstai);
 echo '<br>';
-echo '<br>';
 
+echo '<br>'.'<b>NAUJA DIENA - 12.20</b>';
+echo '<br>';
+echo '<br>';
+function kieksimboliu($txt) {
+
+    $mas=[];
+    for($i=0; $i<count($txt);$i++)
+        $mas[$i]=$txt[$i].(strlen($txt[$i])+1);
+    return $mas;
+}
+echo json_encode (kieksimboliu($tekstai));
 ?>
