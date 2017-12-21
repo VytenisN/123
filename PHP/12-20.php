@@ -11,16 +11,21 @@ $ma['lada'] = 'geltona';
 echo json_encode($ma) . "<br>";
 unset($ma['bmw']);
 echo json_encode($ma) . "<br>";
+echo '<hr>';
+//sortinimas
 $my = ['bmw' => "raudona", 'audi' => 'balta', 'honda' => 'juoda'];
 sort($my);
 echo json_encode($my) . "<br>";
 $mz = ['bmw' => "raudona", 'audi' => 'balta', 'honda' => 'juoda'];
 ksort($mz);
 echo json_encode($mz) . "<br>";
+echo '<hr>';
+//merge
 $a = ['a', 'x', 'z'];
 $b = ['c', 'm'];
 $c = array_merge($a, $b);
 print_r($c);
+echo '<br>';
 sort($c);
 print_r($c);
 echo '<br>' . json_encode($c);
@@ -30,6 +35,8 @@ $cc = array_merge($aa, $bb);
 echo '<br>' . json_encode($cc);
 ksort($cc);
 echo '<br>' . json_encode($cc);
+echo '<hr>';
+//zaidimas su key
 function test($ma, $key){
     if (isset($ma[$key])) echo '<br>yra'; else echo '<br>nera';
 }
