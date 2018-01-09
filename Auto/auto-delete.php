@@ -16,4 +16,4 @@ echo
   '<p style="color: ' . $color .'; font-size: 32px; text-align: center">' . $message . '</p>' .
 '</div>';
 ?>
-<a href=""><button class="btn">Automobilių sąrašas</button></a>
+<a href="index.php"><button class="btn">Automobilių sąrašas</button></a>
