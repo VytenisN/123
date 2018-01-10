@@ -1,12 +1,14 @@
 <?php
-if (isset($_POST['delete'])){
+if (isset($_POST['delete']))
+{
     $auto = new auto();
     $ok = $auto->delete($_POST['delete']);
     if ($ok) $bg = 'bg-success'; else $bg = 'bg-danger';
     $message = $auto->message;
     $color = 'white';
 }
-else {
+else 
+{
     $bg = 'bg-danger';
     $message = 'Neleistinas veiksmas';
     $color = 'red';
