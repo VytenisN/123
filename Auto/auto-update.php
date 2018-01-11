@@ -20,54 +20,64 @@
 </head>
 <body>
 <div class="container-flex">
-    <?php include 'auto-header.php' ?>
 
 <?php
-include 'auto.php';
-$auto = new auto();
+if (isset($_POST['id'])) {
+    include 'auto-header.php';
+    include 'auto.php';
+    $auto = new auto();
 
-$car =
-[	'id' => $_POST['id'],
-    'gamintojas' => $_POST['gamintojas'],
-    'modelis' => $_POST['modelis'],
-    'metai' => $_POST['metai'],
-    'kaina' => $_POST['kaina'],
-];
-$ok = true;
-if (isset($_FILES["nuotrauka"]) && strlen($_FILES["nuotrauka"]['name'])>0){
-    $message = 'Upload ';
-    $check = getimagesize($_FILES["nuotrauka"]["tmp_name"]);
-    if ($ok = $check !== false) 
-    {
-        if ($ok = in_array($check["mime"], ['image/jpg', 'image/jpeg', 'image/png'])) 
+    $car =
+    [	'id' => $_POST['id'],
+        'gamintojas' => $_POST['gamintojas'],
+        'modelis' => $_POST['modelis'],
+        'metai' => $_POST['metai'],
+        'kaina' => $_POST['kaina'],
+    ];
+    $ok = true;
+
+    if (isset($_FILES["nuotrauka"]) && strlen($_FILES["nuotrauka"]['name'])>0){
+        $message = 'Upload ';
+        $check = getimagesize($_FILES["nuotrauka"]["tmp_name"]);
+        if ($ok = $check !== false) 
         {
-            $fp = fopen($_FILES['nuotrauka']['tmp_name'], "rb");
-            if ($ok = $fp !== false)
+            if ($ok = in_array($check["mime"], ['image/jpg', 'image/jpeg', 'image/png'])) 
             {
-                $car['nuotrauka'] = fread($fp, filesize($_FILES['nuotrauka']['tmp_name']));
-                $car['mime'] = $check["mime"];
-                fclose($fp);
-            } else $message .= 'nesėkmingas: problema vykdant upload veiksmą';
-         } else $message .= 'nesėkmingas: nuotraukos failo tipas yra neleistinas';
-    } else $message .= 'nesėkmingas: nuotraukos failas nėra nuotrauka';
+                $fp = fopen($_FILES['nuotrauka']['tmp_name'], "rb");
+                if ($ok = $fp !== false)
+                {
+                    $car['nuotrauka'] = fread($fp, filesize($_FILES['nuotrauka']['tmp_name']));
+                    $car['mime'] = $check["mime"];
+                    fclose($fp);
+                } else $message .= 'nesėkmingas: problema vykdant upload veiksmą';
+             } else $message .= 'nesėkmingas: nuotraukos failo tipas yra neleistinas';
+        } else $message .= 'nesėkmingas: nuotraukos failas nėra nuotrauka';
+    }
+    if ($ok)
+    {
+            if (strlen($car['id'])>0) {
+                $ok = $auto->update($car);
+            }
+            else {
+                $ok = $auto->insert($car);
+            }
+            if ($ok) $bg = 'bg-success'; else $bg = 'bg-danger';
+            $message = $auto->message;
+    }
+    echo
+    '<div class="jumbotron p-2 ' . $bg . '">' .
+      '<p style="color: ' . $color .'; font-size: 32px; text-align: center">' . $message . '</p>' .
+    '</div>';
 }
-if ($ok)
-{
-        if (strlen($car['id'])>0) {
-            $ok = $auto->update($car);
-        }
-        else {
-            $ok = $auto->insert($car);
-        }
-        if ($ok) $bg = 'bg-success'; else $bg = 'bg-danger';
-        $message = $auto->message;
-}
-echo
-'<div class="jumbotron p-2 ' . $bg . '">' .
-  '<p style="color: ' . $color .'; font-size: 32px; text-align: center">' . $message . '</p>' .
-'</div>';
+else {
+        ?>
+        <div class="jumbotron p-2 bg-danger">
+            <p style="color: white; font-size: 32px">Neleistinas veiksmas</p>
+        </div>
+        <?php
+    }
 ?>
-<a href="index.php"><button class="btn">Automobilių sąrašas</button></a>
+    <a href="index.php"><button class="btn">Automobilių sąrašas</button></a>
 </div>
 </body>
 </html>
