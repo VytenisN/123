@@ -53,7 +53,7 @@ else {
     <?php
 }
 ?>
-    <a href="/kontroliniai/darbas"><button class="btn">Automobilių sąrašas</button></a>
+    <a href="index.php"><button class="btn">Automobilių sąrašas</button></a>
 </div>
 </body>
 </html>
