@@ -1,0 +1,30 @@
+<!--
+Sukurkite HTML dokumentą su įvedimo formą. Forma turėtu turėti laukus : 2x tekstiniai laukai: Šalies pavadinimas, sostinės pavadinimas, 1x radio pasirinkimas: Šalies tipas vakarų, rytų. Forma turėtu būti nusiųsta į 11-last-backend.php failą metodu POST. 11-last-backend.php faile pridėkite įrašą į sesiją ir redirectinkite vartotoją atgal į įvedimo formos html dokumentą
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma 1 </title>
+
+</head>
+<body >
+<h1 style="text-align: center;" >Forma 1</h1>
+	<form method="POST" action="11-last-backend.php">
+			<label for= "salis" >Šalies pavadinimas:</label>
+			<input type="text" id="salis" name="salis">
+			<br>	
+			<label for= "sostine" >Sostinės pavadinimas:</label>
+			<input type="text" id="salis" name="sostine">
+			<br>
+			<label>Šalies tipas: </label>
+			<label for= "tipas" >Rytų</label>
+			<input type="radio" id="tipas" name="tipas">
+			<label for= "tipas2" >Vakarų</label>
+			<input type="radio" id="tipas2" name="tipas2">
+			<br>
+			<button type="submit">Pateikti</button>		
+	</form>
+</body>
+</html>

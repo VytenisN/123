@@ -1,0 +1,56 @@
+<!--
+Sukurkite HTML dokumentą, kurio <head> skiltyje būtų aprašytas stilius. Visas dokumento fonas ‐ paveikslėlis, teksto dydis 24px ir silver spalva. Dokumente turėtų būti išvesta 4x4 lentelė sudaryta iš <div> elementų, t.y. div langeliai ‐ div eilutėse, o šios ‐ pagrindiniam div elemente. Eilutės lentelėje turi būti su paraštėmis 10px, langeliai lentelėse savo ruožtu taip pat su 10px paraštėmis. Langelių fono spalva turi būti green spalva.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+		body 
+		{
+			background-image: url(http://www.serenity-station.com/wp-content/uploads/2013/01/ss-nature.jpg);
+			font-size: 24px;
+			color: silver;
+			text-align: center;
+		}
+		.tbl
+		{
+			display: table;
+		}
+		.rw
+		{
+			display: table-row;
+			padding: 10px;
+		}
+		.cell
+		{
+			display: table-cell;
+			background-color: green;
+			padding: 10px;
+			border: solid 1px;
+			border-color: black;
+		}
+	</style>
+</head>
+<body>
+
+<h1> TEKSTAS</h1>
+<p>tekstas tekstas tekstas tekstas tekstas tekstas</p>
+<div class="tbl">
+	<div class="rw"> 
+		<div class="cell">tekstas</div><div class="cell">tekstas 2</div><div class="cell">tekstas 3</div><div class="cell">tekstas 4</div>
+	</div>	
+	<div class="rw"> 
+		<div class="cell">tekstas 6</div><div class="cell">tekstas 7</div><div class="cell">tekstas 8</div><div class="cell">tekstas 9</div>
+	</div>	
+	<div class="rw"> 
+		<div class="cell">tekstas 11</div><div class="cell">tekstas 12</div><div class="cell">tekstas 13</div><div class="cell">tekstas 14</div>
+	</div>	
+	<div class="rw"> 
+		<div class="cell">tekstas 20</div><div class="cell">tekstas 21</div><div class="cell">tekstas 31</div><div class="cell">tekstas 41</div>
+	</div>	
+</div>
+</body>
+</html>
