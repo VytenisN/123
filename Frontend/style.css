@@ -1,0 +1,10 @@
+body {font-family: 'Open Sans', sans-serif;}
+.container-fluid {background-color:#7ec0ee }
+.container {background-color: #C8E0F1; width: 900px; padding: 30px; border-radius: 1%}
+h1 { text-align: center; color: brown }
+h2 {color:brown;}
+h4 {color:brown;}
+img { border-radius:50%; border: 3px black solid;}
+table {text-align: center; border-collapse: collapse; }
+td, th {border: 1px black solid; background-color:#EEC07E; }
+.std {width: 800px}
