@@ -1,0 +1,72 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image:url("swirl_pattern.png");
+}
+
+#container{
+    width:900px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    
+    /*
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    */    
+    margin: 0px auto;
+    margin-top:50px;
+}
+
+.image-wrap{
+    background:pink;
+
+    /*margin:10px;
+    background: lime;
+    min-width: 100px;
+    max-width: 200px;
+    display: inline-block;
+
+    overflow: hidden;
+
+    border:1px solid #aaa;
+    padding:10px;
+
+    min-width: 248px;
+    min-width: 222px;
+
+    max-height: 100%;
+    height:100%;*/
+}
+
+.image-wrap div{
+    position:relative;
+    display:block;
+    overflow:hidden;
+    text-align:center;
+    border:1px solid #aaa;
+}
+
+.image-wrap img{
+    max-width: 100%;
+}
+
+.image-wrap img:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.produktai{
+    height:228px;
+    background: orange;
+}
+
+article{
+    height:100%;
+    width:200px;
+}
+
+.clear{
+    clear: both;
+}
