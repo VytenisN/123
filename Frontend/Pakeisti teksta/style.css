@@ -1,0 +1,17 @@
+body {
+	font-family: 'Open Sans', sans-serif; 
+	background: url('light-veneer.png');
+	}
+#input {	
+		background: url('circles-light.png');
+		margin-top: 25px;
+		border: 1px solid black; 
+		padding:35px;
+		border-radius: 20px;
+		font-family: 'Supermercado One', cursive
+		}
+h2 {text-align: center}
+
+#output {
+	font-size: 40px;
+	}

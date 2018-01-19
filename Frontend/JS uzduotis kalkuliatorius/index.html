@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS uzduotis basic math</title>
+    
+	
+	<script>
+		function Sum(){
+			var a_text = document.getElementById("nr1").value;
+			var b_text = document.getElementById("nr2").value;
+			
+			
+			// grazina skaiciu paprasta (Integer).
+			//var a = parseInt(a_text);
+			//var b = parseInt(b_text);
+			
+			// grazina skaiciu su kableliu (Float).
+			var a = parseFloat(a_text);
+			var b = parseFloat(b_text);
+			
+			console.log(typeof a);			
+			var c = a + b;
+			
+			//parodom rezultata
+			document.getElementById("result").value = c;
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<input type="text" id="nr1" placeholder="a" /> + <input type="text" id="nr2" placeholder="b" /> = <input type="text" id="result" placeholder="c" />
+	</div>
+    
+	<div>
+	<button id="Sum" onclick="Sum()">Sum</button>
+	</div>
+	
+</body>
+
+</html>

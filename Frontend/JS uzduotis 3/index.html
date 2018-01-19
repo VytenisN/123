@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zodziai</title>
+        <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- custom css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body class= "container-fluid">
+    <div class="col-4">
+    <div class=row>
+    	<div class="col-2"> Žodis 1 <input type="text" size="10" id="pirmas"></div>
+        <div class="col-2"></div>
+        <div class="col-2"> Žodis 2 <input type="text" size="10" id="antras"></div>
+    </div>
+    <br>
+    <div class="row"> 
+        <div class= "col-2">
+            <button type="button" class="btn btn-Primary" onclick="zodz()"> Palyginti</button>
+        </div>
+    <br>
+    <br>
+    </div>
+    <div class="row">
+        <div class="col-8">
+        <p>Šie zodziai yra:  <span id="rez" style="color: red"></span></p>
+            <script> 
+                function zodz()
+                {
+                var a = document.getElementById("pirmas").value;
+                    console.log(a);
+                var b = document.getElementById("antras").value;
+                    if (a == b)
+                    document.getElementById("rez").innerHTML = "Vienodi";
+                else
+                    document.getElementById("rez").innerHTML = "Skirtingi";
+                }
+            </script>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
