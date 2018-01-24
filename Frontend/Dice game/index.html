@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dice roll</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 offset-1" id="forma">
+                <form>
+                    <div class="form-group">
+                        <label for="ieskoti">Please input a number </label> 
+                        <input type="number" class="form-control" placeholder="Your number here" id="ieskoti">
+                    </div>    
+                    <button type="button" class="btn btn-danger" id="butt"> <i class="fa fa-usd"> </i> Roll </button>
+                </form>
+            </div>
+            <div class="col-3 offset-1" id="win">
+                <br>
+                <p style="color: purple">Result: <p>
+                    <p id="rez"></p>
+                    <div class="image_wrap">
+                        <img src="img/dice.png" id="dice1" />
+                        <img src="img/dice.png" id="dice2" />
+                    </div>                    
+                    <p id="tekstas"></p>  
+                    
+                </div>
+                <div class="col-2 offset-1" id="results">
+                    <br>
+                    <p style="color: purple">Dice roll list: <p>
+                        <p id="array"></p>  
+                    </div>
+                </div>  
+            </div>
+
+            <script src="script.js"></script>
+        </body>
+
+        </html>
