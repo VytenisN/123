@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic popup</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+	
+	<link rel="stylesheet" href="css/basic-popup.css"/>
+	
+</head>
+
+<style>
+	#navigation ul.lvl_1{
+		padding-left:0px;
+		margin-left:0px;
+	}
+	#navigation ul.lvl_1 li.lvl_1{
+		list-style:none;
+		background:#aaa;
+		color:#333;
+		/*display:block;*/
+		display:inline-block;
+		float:left;
+		margin-right:50px;
+		padding:5px 15px;
+		font-size:16px;	
+		position:relative;		
+	}
+	
+	ul.lvl_1 li.lvl_1 a{
+		display:block;
+		padding-left:5px;
+		color:#fff;
+	}
+	
+	ul.lvl_2{
+		position:absolute;
+		padding-left:0px;
+	}
+	
+	.isiskleidziantis{
+	display:none;
+	}
+	
+	ul.lvl_2{
+		border:1px solid #aaa;
+	}
+	
+	ul.lvl_2 li{
+		
+		display:block;
+		
+	}
+	
+	ul.lvl_2 li.lvl_2 a{
+		display:block;
+		padding-left:20px;
+		color:#333;
+		background:#fff;
+		width:200px;
+		border-top:1px solid #aaa;
+	}
+	
+	
+	
+	.topIcon{
+		position:absolute;
+		font-size: 40px;
+	}
+	
+	.title{
+		display:block;
+		padding-left:50px;
+	}
+	
+	.topIconFigure{
+		background:orange;
+		color:#fff;
+		min-height:50px;
+	}
+	
+	.user-popup{
+		display:none;
+		background:lime;		
+		width:200px;
+		right:0px;
+		top:50px;
+		position:absolute;
+	}
+	
+	.popup-wrap{
+		padding:15px;
+	}
+	
+	.arrow-down {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+	position:absolute;
+	top: 12px;
+    right: 4px;
+}
+	
+	
+</style>
+
+<body>
+
+
+<section id="top-nav">
+	<div class="row">
+		<div class="col-lg-2 col-md-2">
+		<a href="#"><img src="http://via.placeholder.com/150x50"></a>
+		</div>
+		<div class="col-lg-8 col-md-8">
+			<div id="navigation">
+				<ul class="lvl_1">
+					<li class="lvl_1"><a href="#">Apie mus</a><div class="arrow-down"></div>
+						<ul class="lvl_2 isiskleidziantis">
+							<li class="lvl_2"><a href="#">Kontaktai</a></li>
+							<li class="lvl_2"><a href="#">Galerija</a></li>
+							<li class="lvl_2"><a href="#">D.U.K</a></li>
+						</ul>
+					</li>
+					<li class="lvl_1"><a href="#">Komentarai</a></li>
+					<li style="display:none;clear:both;"></li>
+				</ul>
+			</div>
+		
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<div id="trigger">			
+				<figure class="topIconFigure">
+					<span class="topIcon">
+						<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					</span>
+					<div class="title">Registruotis / <strong> Prisijungti</strong></div>
+				</figure>
+				<div class="user-popup">
+					<div class="popup-wrap">
+						<div class="button-wrap">
+							<button>Facebook</button>
+							<button>Google</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="jquery_basic">
+
+<div>
+
+</div>
+
+    <div class="container whitebg container_helper">
+		<div class="container_spacing">
+			
+		</div>
+	</div>
+	
+	
+
+</section>
+<section id="footer">
+Footer stuff goes here...
+</section>
+    
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type = "text/javascript"  src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+     </script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+    <script src="js/script-basic popup.js"></script>
+	
+</body>
+
+</html>
