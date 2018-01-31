@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google Fonts CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style type="text/css">
+	body {
+		font-family: 'Open Sans', sans-serif;
+		background-color: #f3a021;
+		background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+	}
+	.nav-item {
+		font-family: bold;
+	}
+
+	.navbar {
+		padding-top: 0rem;
+		padding-bottom: 0rem
+	}
+
+	.navbar-nav > li + li::before {   
+		content: "";   
+		position: absolute;  
+		top: 19px;  
+		height: 21px;  
+		border-left: 2px solid #ffffff;  
+	} 
+	.btn-secondary {
+		box-shadow: 6px 6px;
+	}
+	
+	.first {
+		background: #DCA113;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 20px;
+
+	}
+
+	.second {
+		background-color: white; 
+		border:3px solid; 
+
+	}
+
+	.second p {
+		line-height: 0.8rem;
+	}
+
+	.third {
+		background-color: white; 
+		border:3px solid; 
+		margin-top:2px;
+		padding: 10px;
+		text-decoration: underline;
+
+	}
+
+	.third h5 {
+		padding-top: 0.5rem;
+	}	
+	.third p {
+		font-size:0.6rem;
+		line-height: 0.5rem;
+	}
+	.third> * {
+		padding:20px;
+	}
+	img {
+	    width: 100%;
+	    height: auto;
+	}
+
+</style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand navbar-dark bg-primary">
+			<a class="navbar-brand" href="#">PACIUGO</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor01">
+				<ul class="nav navbar-nav ml-3" >
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Articles</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Galery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Store</a>
+					</li>
+				</ul>
+				<div class="nav navbar-nav ml-auto">
+					<div class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<!-- Full width widgets  -->
+
+		<div class="container-fluid first" > 
+			<div class="row">
+				<div class="col-lg-12">
+					<div>
+						<h1>Widgets</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua </p>
+				
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<button class="btn btn-secondary">Try Now!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Full width widgets  -->
+
+		<div class="container-fluid second" > 
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-6 " style= "padding: 0.6rem ">
+					<a><img src="http://via.placeholder.com/220x120" class="img-fluid"></a>
+				</div>
+				<div class="col-md-3 col-xs-6 col-sm-6" style="padding: 0.8rem 0.2rem 0.8rem 0.2rem">
+					<h5 style="text-decoration: underline" > <a href="#"> Super Fast Widgets</a></h5>
+					<p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt. </p>
+					<p style="font-size: 0.6rem"> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-5" style="padding: 0.1rem" >
+					<a><img src="http://via.placeholder.com/300x135" class="img-fluid"></a>
+				</div>	            	            
+			</div>
+		</div>
+
+		<!-- All  widgets  -->
+		<div class="container-fluid third" > 
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>	            	            	            
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-4">
+					<img src="http://via.placeholder.com/140x100">
+					<h5> <a href="#"> Super Fast Widgets</a></h5>
+					<p> <a href="www.superfastwidgets.com" target="blank">www.superfastwidgets.com</a></p>
+				</div> 	            	            	            
+			</div>	        
+		</div>
+
+
+	</div>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
