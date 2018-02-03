@@ -1,0 +1,103 @@
+body {
+background-color: #6d6875;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+font-size: 1.2rem;
+font-family: 'Space Mono', monospace;
+
+}
+
+.container-fluid {
+	width: 100%;
+	max-width: 900px;
+}
+
+
+.btn{
+	margin: 5px;
+	border-radius: 20px;
+	border-width: 1.5px;
+	font-size: 1.2rem;
+	letter-spacing: 1.5px;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.show ul  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#block1 {
+	background-color: #FFCDB2;
+	padding:50px;
+	color:white;
+
+}
+
+.center {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#hr1 {
+	border:2px solid;
+	width: 350px;
+	float:right;
+}
+
+#me {
+
+	font-weight: bold;
+}
+
+#face {
+	padding:20px;
+}
+
+#face img {
+	height: 200px; 
+	width: 200px;
+	border:5px solid #ffffff;
+	border-radius: 50%;
+	display:table-cell;
+
+}
+
+
+#block2, #block3 {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	background-color: #FFB4A2;
+	padding:50px;
+	color: #6d6875;
+
+}
+
+#hr2, #hr3 {
+	border:2px solid;
+	width: 100%;
+	max-width: 550px;
+	float:right;
+}
+
+.exp img {
+	width: 100%;
+	height:auto;
+	padding:10px;
+}
+
+@media screen and (max-width: 767px) {
+	#hr1, #hr3{
+		width: 100%;
+		max-width: 600px;
+		float:none;
+	}
+	
+}
