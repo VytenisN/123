@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-light " style="background-color: #E5989B" name="top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="top">
+        <div class="container-fluid" id="inNav">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvb" aria-controls="nvb" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,25 +27,24 @@
             <div class="collapse navbar-collapse" id="nvb">
               <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#top"><btn class="btn btn-outline-light" >HOME </btn></a>
+                        <a href="#"><btn class="btn btn-outline-light" >HOME </btn></a>
                     </li>
                     <li class="nav-item">
                         <a href="#block2"><btn class="btn btn-outline-light" >EXPERIENCE</btn></a>
                     </li>
                     <li class="nav-item">
-                        <a><btn class="btn btn-outline-light" href="#txt">SECOND</btn></a>
+                        <a href="#block3"><btn class="btn btn-outline-light">PORTFOLIO</btn></a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a><btn class="btn btn-outline-light" href="#txt">THIRD</btn></a>
+                        <a href="#block4"><btn class="btn btn-outline-light" >THIRD</btn></a>
                     </li>
-
               </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid" >
+    <div class="container-fluid" id="main" >
 
           <!-- first block Intro-->
         <div class="row " id="block1">
@@ -64,7 +63,7 @@
             
                 <hr id="hr1">
                 <div class=" col-12 center" id="me">
-                    Fullstack Developer - Business Developer - Former Poker Pro
+                    Junior Web Developer - Business Developer - Former Poker Professional
                 </div>
             </div>
 
@@ -84,24 +83,26 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         
                 </div>
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>                
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>
-                <div class="col-md-4 exp">
-                    <a href=""><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
-                </div>
+
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" title="Just an image (#1)"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>                
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>
+                    <div class="col-md-4 exp">
+                        <a href="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png"><img src="https://www.spiritdental.com/components/com_easyblog/themes/wireframe/images/placeholder-image.png" alt="#"> </a>                    
+                    </div>
+
                 <div class="col-12 " style="margin: 20px auto 30px auto">
                     Text text text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -109,20 +110,53 @@
                 </div>                                
             </div>
             <!-- Third block Coding-->
-            <div class="row" id="block3">
+            <div class="row" id="block3" style="height: 1000px">
                 <h2>PORTFOLIO</h2>
                 <hr id="hr3">
             </div>
-
-
-
+            <div class="row" id="block4" style="height: 600px; margin-bottom: 0px">
+                <h2>PORTFOLIO2</h2>
+                <hr id="hr3">
+            </div>
 
     </div> <!-- </container-fluid-->
 
-        <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <footer id = "foot">
+        <div class="container-fluid" id="inFoot">
+            <div class="row">
+                <div class="col-md-4">
+                    Copyright
+                </div>
+                <div class="col-md-4">
+                    Copyright2
+                </div>
+                <div class="col-md-4">
+                    Copyright3
+                </div>
+                <div class="col-md-4">
+                    Copyright
+                </div>
+                <div class="col-md-4">
+                    Copyright2
+                </div>
+                <div class="col-md-4">
+                    Copyright3
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+        <!-- jQuery libraries -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.poptrox-master/jquery.poptrox.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <script src="js/script.js"></script>
 
 </body>

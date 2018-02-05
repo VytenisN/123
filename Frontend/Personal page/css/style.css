@@ -6,11 +6,14 @@ font-family: 'Space Mono', monospace;
 
 }
 
-.container-fluid {
+#main, #inNav, #inFoot {
 	width: 100%;
 	max-width: 900px;
 }
 
+#top {
+	background-color:#E5989B;
+}
 
 .btn{
 	margin: 5px;
@@ -24,6 +27,12 @@ font-family: 'Space Mono', monospace;
     -webkit-transition: none;
     transition: none;
     display: none;
+}
+
+#top li.active btn {
+    border-color: #6d6875;
+    background-color: #ffffff;
+    color: black;
 }
 
 .show ul  {
@@ -71,7 +80,7 @@ font-family: 'Space Mono', monospace;
 }
 
 
-#block2, #block3 {
+#block2, #block3, #block4 {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	background-color: #FFB4A2;
@@ -100,4 +109,9 @@ font-family: 'Space Mono', monospace;
 		float:none;
 	}
 	
+}
+
+#foot {
+	background-color:#E5989B;
+
 }
