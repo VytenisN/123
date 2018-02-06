@@ -1,7 +1,8 @@
 
 $( document).ready(function() {
 
-	// apply dynamic padding at the top of the body according to the fixed navbar height
+	// apply dynamic PADDING at the top of the body according to the fixed navbar height
+
 	var onResize = function() {
 	  $("body").css("padding-top", $(".fixed-top").height());
 	};
@@ -11,7 +12,7 @@ $( document).ready(function() {
 	});
 
 
-	//Transition on scroll
+	//TRANSITION on scroll
 
 		// Cache selectors
 	var lastId,
@@ -26,12 +27,13 @@ $( document).ready(function() {
 	    });
 
 			// Bind click handler to menu items so we can get a fancy scroll animation
-		menuItems.click(function(e){
+		menuItems.add($("#code")).click(function(e){
 	  	var href = $(this).attr("href"),
 	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
 	  	$('html, body').stop().animate({ 
 	      scrollTop: offsetTop
 	  }, 300);
+
 	  e.preventDefault();
 	});
 
@@ -58,9 +60,20 @@ $( document).ready(function() {
 	   }                   
 	});
 
-// Poptrox Plugin
+// POPTROX Plugin
 
 	$('#block2').poptrox();
+
+ 	$('#travel').poptrox({
+		usePopupNav:true,
+		popupPadding: 0,
+		fadeSpeed:0
+	});
+	// Load gallery in Travel page
+	setTimeout(function() {
+        $("#travel:first-child a").trigger('click');
+    },10);
+
 
 
 });

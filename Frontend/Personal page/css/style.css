@@ -1,4 +1,4 @@
-body {
+.mainBody {
 background-color: #6d6875;
 background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 font-size: 1.2rem;
@@ -15,7 +15,7 @@ font-family: 'Space Mono', monospace;
 	background-color:#E5989B;
 }
 
-.btn{
+#nvb btn {
 	margin: 5px;
 	border-radius: 20px;
 	border-width: 1.5px;
@@ -97,9 +97,9 @@ font-family: 'Space Mono', monospace;
 }
 
 .exp img {
-	width: 100%;
-	height:auto;
-	padding:10px;
+	width: 80%;
+	height: auto;
+	padding:20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -114,4 +114,49 @@ font-family: 'Space Mono', monospace;
 #foot {
 	background-color:#E5989B;
 
+}
+
+.popup {
+	width: 550px;
+	padding: 20px;
+	background-color: #FFB4A2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.popup img {
+	width: 50%;
+	height: auto;
+	margin: 30px;
+
+}
+.popup li {
+	padding: 10px;
+}
+
+.popupCenter {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popupBody {
+background-color: #6d6875;
+font-size: 0.8rem;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+font-family: 'Space Mono', monospace;
+
+}
+
+#popupBtn .btn {
+	background-color: red;
+	border-color: red;
 }
