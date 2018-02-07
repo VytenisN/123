@@ -52,7 +52,7 @@ font-family: 'Space Mono', monospace;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+
 }
 
 #hr1 {
@@ -79,43 +79,89 @@ font-family: 'Space Mono', monospace;
 
 }
 
-
-#block2, #block3, #block4 {
+#block2, #block3 {
 	margin-top: 1px;
 	margin-bottom: 1px;
 	background-color: #FFB4A2;
 	padding:50px;
 	color: #6d6875;
+}
+
+#block2 img {
+	width: 80%;
+	height: auto;
+	padding: 20px;
 
 }
 
-#hr2, #hr3 {
+#block3 {
+	margin-bottom: 0px;
+}
+
+#block3 div {
+	padding:20px;
+}
+
+#block3 img {
+	max-width: 80px;
+}
+
+
+#block3 a {
+	color: inherit;
+	padding: 10px;
+}
+
+#hr2 {
 	border:2px solid;
 	width: 100%;
 	max-width: 550px;
 	float:right;
 }
 
-.exp img {
-	width: 80%;
-	height: auto;
-	padding:20px;
+ #hr3 {
+	border:2px solid;
+	width: 100%;
+	max-width: 600px;
+	float:right;
 }
 
+
+
 @media screen and (max-width: 767px) {
-	#hr1, #hr3{
+	#hr1, #hr2 #hr3{
 		width: 100%;
 		max-width: 600px;
 		float:none;
 	}
-	
+	#block2 img {
+
+		max-width: 250px ;
+	}
 }
 
 #foot {
 	background-color:#E5989B;
+	color: #6d6875;
+	min-height: 60px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 
 }
+footer .fa-github, .fa-envelope, .fa-linkedin {
+	margin-right: 25px;
+}
 
+footer div {
+	color:white;
+}
+
+#inFoot a {
+	color: inherit;
+}
+
+
+ /* css for other .html*/
 .popup {
 	width: 550px;
 	padding: 20px;
@@ -149,10 +195,10 @@ font-family: 'Space Mono', monospace;
 }
 
 .popupBody {
-background-color: #6d6875;
-font-size: 0.8rem;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-font-family: 'Space Mono', monospace;
+	background-color: #6d6875;
+	font-size: 0.8rem;
+	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+	font-family: 'Space Mono', monospace;
 
 }
 
