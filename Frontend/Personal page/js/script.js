@@ -62,17 +62,16 @@ $( document).ready(function() {
 
 // POPTROX Plugin
 
-	$('#block2').poptrox();
-
- 	$('#travel').poptrox({
-		usePopupNav:true,
-		popupPadding: 0,
-		fadeSpeed:0
+	$('#block2').poptrox({
+			usePopupNav:true,
+			popupPadding: 0,
 	});
-	// Load gallery in Travel page
-	setTimeout(function() {
-        $("#travel:first-child a").trigger('click');
-    },10);
+
+ 	$("#tr2").click(function() {
+ 		
+		$('#photo1').click();
+    
+ 	});
 
 
 
