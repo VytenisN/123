@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My app</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>My app</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group form-inline">
+                        <label for="name">Vardas</label>
+                        <input type="form-text" class="form-control" id="name" placeholder="Įveskite vardą">
+                    </div>
+                    <div class="form-group form-inline">
+                        <label for="date">Gimimo Data</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn1">Rodyti</button>
+                </form>
+            </div>
+            <div class="col-md-6" id="result">
+                
+            </div>
+            <h2 class="col-12">Žmonės ir Lietuvos</h2>
+            <div id="people" class="col-12">
+                
+            </div>         
+        </div>    
+    </div>
+
+    <!-- jQuery libraries -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <!-- Bootsrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- script files-->
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+

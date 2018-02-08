@@ -1,0 +1,22 @@
+body {
+	background-color: #f5f8fa;
+	padding: 60px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.form-inline label{
+	min-width: 110px;
+	justify-content: flex-start;
+}
+
+.form-control {
+	min-width: 230px;
+}
+
+h2 {
+	margin-top: 25px;
+}
