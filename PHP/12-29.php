@@ -24,8 +24,8 @@ class person {
     public $surname;
     public $age;
 
-    function __construct($name,$surname,$age){
-        $this->name=$name;
+    function __construct($n,$surname,$age){
+        $this->name=$n;
         $this->surname=$surname;
         $this->age=$age;
 

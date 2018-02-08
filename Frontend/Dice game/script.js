@@ -25,7 +25,7 @@ function roll() {
         document.getElementById("tekstas").innerHTML = "Lose";
     
     document.getElementById("array").innerHTML = display(arr);
-    //console.log(arr);
+    console.log(guess);
 }
 //array display
 function display(a){
